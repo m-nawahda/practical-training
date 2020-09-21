@@ -1,26 +1,24 @@
-  * {
+* {
     box-sizing: content-box;
   }
   body {
     margin: 0;
-    overflow-x: hidden;
   }
   label {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
   .banner {
-    height: 80px;
     width: 100%;
     position: sticky;
     top: 0;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
   }
   .logo {
-    height: 60%;
     width: 100%;
-    padding-left: 8px;
+    padding: 4px;
     background-color:#2C3650;
-    line-height: 50px;
+    display: flex;
+    align-items: center;
   }
   .icon {
     height: 30px;
@@ -31,7 +29,6 @@
     align-items: center;
     border: 1px solid white;  
     border-radius: 50%;
-    margin-top: 8px;
     margin-left: 2px;
     margin-right: 8px;
     font-style: bold;
@@ -40,6 +37,8 @@
     margin: 0px 0px 0px 0px;
     color: white;
     font-size: 24px;  
+    position: relative;
+    top: -1px;
   }
   .emp-label {      
     font-size: 18px;
@@ -47,7 +46,6 @@
     color: white;
   }
   .bottom-banner {
-    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,12 +54,13 @@
     font-size: 18px;
   }  
   .row {
-    margin: 4px -10px 0px 0px  !important;
+    margin: 4px 0px 0px 0px  !important;
+  
   }
   .col-3 {
     padding: 3px !important;
     z-index: -1;
-
+  
   }
   .col-3 img {
     width: 100%;
