@@ -79,7 +79,7 @@ label {
 }
 
 .toggle {
-    
+
     width: 22px;
     height: 22px;
     position: fixed;
@@ -149,28 +149,3 @@ td {
     }
 
 }
-
-/*@media screen and (min-width: 576px) {
-    .container-images {
-      display: flex !important;
-    }
-    .container-images .col-3 {
-      max-width: 50% !important;
-    }
-  }
- /* @media screen and (min-width: 768px) {
-    .container-images {
-      display: block !important;
-    }
-    .container-images .col-3 {
-      max-width: 100% !important;
-    }
-  }
-  @media screen and (min-width: 992px) {
-    .container-images {
-      display: block !important;
-    }
-    .container-images .col-3 {
-      max-width: 100% !important;
-    }
-  }
