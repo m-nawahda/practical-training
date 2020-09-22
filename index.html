@@ -11,13 +11,12 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="javascript.js"></script>
 
     <title>EMPRESA-3</title>
   </head>
-  <body>
-    <input class="toggle" type="checkbox" />
 
-    <i class="fa fa-cog"></i>
+  <body>
     <div class="banner">
       <div class="logo">
         <div class="icon">
@@ -27,9 +26,10 @@
       </div>
       <div class="bottom-banner">
         <label class="estudio"> estudio </label>
+        <i class="fa fa-cog" onclick="setVisibility_menu(0)"></i>
       </div>
     </div>
-    <div class="row container-images">
+    <div class="row container-images" onclick="setVisibility_menu(1)">
       <div class="col-sm-6 col-md-4 col-lg-3">
         <img src="room-images/room1.jpg" alt="one" />
       </div>
@@ -68,6 +68,9 @@
       </div>
     </div>
     <div class="menu">
+      <div class="close-icon">
+        <i class="fa fa-times" onclick="setVisibility_menu(1)"></i>
+      </div>
       <div class="row rooms-options row">
         <div class="option col-sm-12 col-md-6 col-lg-4">
           <table>
@@ -77,8 +80,8 @@
               <th>Type</th>
             </tr>
             <tr>
-              <td>January</td>
-              <td>January</td>
+              <td>1</td>
+              <td>100</td>
               <td>
                 <select>
                   <option>Living room</option>
@@ -97,8 +100,8 @@
               <th>Type</th>
             </tr>
             <tr>
-              <td>January</td>
-              <td>January</td>
+              <td>2</td>
+              <td>102</td>
               <td>
                 <select>
                   <option>Living room</option>
@@ -117,8 +120,8 @@
               <th>Type</th>
             </tr>
             <tr>
-              <td>January</td>
-              <td>January</td>
+              <td>12</td>
+              <td>112</td>
               <td>
                 <select>
                   <option>Living room</option>
@@ -137,8 +140,8 @@
               <th>Type</th>
             </tr>
             <tr>
-              <td>January</td>
-              <td>January</td>
+              <td>18</td>
+              <td>120</td>
               <td>
                 <select>
                   <option>Living room</option>
@@ -157,8 +160,8 @@
               <th>Type</th>
             </tr>
             <tr>
-              <td>January</td>
-              <td>January</td>
+              <td>19</td>
+              <td>121</td>
               <td>
                 <select>
                   <option>Living room</option>
@@ -177,8 +180,8 @@
               <th>Type</th>
             </tr>
             <tr>
-              <td>January</td>
-              <td>January</td>
+              <td>25</td>
+              <td>128</td>
               <td>
                 <select>
                   <option>Living room</option>
