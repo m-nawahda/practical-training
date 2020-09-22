@@ -1,10 +1,10 @@
-function SetMenuVisibility(flag) {
+function setMenuVisibility(flag) {
     var menu = document.getElementsByClassName("menu");
-
-    if (menu[0].getAttribute("toggled") == "false" && !flag) {
+    var toggled=menu[0].getAttribute("toggled");
+    if (toggled == "false" && !flag) {
         menu[0].setAttribute("toggled", "true");
     } 
-    else if (menu[0].getAttribute("toggled") == "true") {
+    else if (toggled == "true") {
         menu[0].setAttribute("toggled", "false");
     }
 }
