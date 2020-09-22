@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -11,6 +11,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
+
     <script src="javascript.js"></script>
 
     <title>EMPRESA-3</title>
@@ -26,10 +28,10 @@
       </div>
       <div class="bottom-banner">
         <label class="estudio"> estudio </label>
-        <i class="fa fa-cog" onclick="setVisibility_menu(0)"></i>
+        <i class="fa fa-cog showmenu-btn" onclick="SetMenuVisibility(0)"></i>
       </div>
     </div>
-    <div class="row container-images" onclick="setVisibility_menu(1)">
+    <div class="row container-images" onclick="SetMenuVisibility(1)">
       <div class="col-sm-6 col-md-4 col-lg-3">
         <img src="room-images/room1.jpg" alt="one" />
       </div>
@@ -67,11 +69,11 @@
         <img src="room-images/room12.jpg" alt="twelve" />
       </div>
     </div>
-    <div class="menu">
-      <div class="close-icon">
-        <i class="fa fa-times" onclick="setVisibility_menu(1)"></i>
+    <div class="menu" toggled="false">
+      <div class="container-closeIcon">
+        <i class="fa fa-times close-icon" onclick="SetMenuVisibility(1)"></i>
       </div>
-      <div class="row rooms-options row">
+      <div class="row rooms-options">
         <div class="option col-sm-12 col-md-6 col-lg-4">
           <table>
             <tr>

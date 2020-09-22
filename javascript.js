@@ -1,13 +1,10 @@
-var toggle = false;
+function SetMenuVisibility(flag) {
+    var menu = document.getElementsByClassName("menu");
 
-function setVisibility_menu(flag) {
-    var menu = document.getElementsByClassName('menu');
-    if (!toggle&&!flag) {
-        menu[0].style.top = '50%';
-        toggle=true;
-    }
-    else if(toggle) {
-        menu[0].style.top = '100%';
-        toggle=false;
+    if (menu[0].getAttribute("toggled") == "false" && !flag) {
+        menu[0].setAttribute("toggled", "true");
+    } 
+    else if (menu[0].getAttribute("toggled") == "true") {
+        menu[0].setAttribute("toggled", "false");
     }
 }

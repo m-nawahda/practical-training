@@ -1,14 +1,10 @@
-* {
-    box-sizing: content-box;
-}
-
 body {
     max-width: 2440px;
     margin: 0;
 }
 
 label {
-    margin-bottom: 0 !important;
+    margin-bottom: 0 ;
 }
 
 .banner {
@@ -68,27 +64,27 @@ label {
     font-size: 22px;
 }
 
-.fa-cog {
-    size: 22px !important;
-    font-size: 22px !important;
+.showmenu-btn {
+    size: 22px ;
+    font-size: 22px;
     margin: 4px;
     color: #606366;
     cursor: pointer;
     transition: 0.85s;
 }
 
-.fa-cog:hover {
+.showmenu-btn:hover {
     color: red;
-    font-size: 28px !important;
+    font-size: 28px;
 }
 
-.row {
-    max-width: 2440px !important;
-    margin: auto !important;
+.container-images {
+    max-width: 2440px ;
+    margin: auto ;
 }
 
 .container-images .col-sm-6 {
-    padding: 5px !important;
+    padding: 3px ;
 }
 
 .container-images img {
@@ -96,9 +92,9 @@ label {
     transition: 0.4s;
 }
 
-img:hover {
-    opacity: 0.83 !important;
-    cursor: pointer !important;
+.container-images img:hover {
+    opacity: 0.83 ;
+    cursor: pointer;
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.8);
 }
 
@@ -114,41 +110,46 @@ img:hover {
     overflow: hidden;
     transition: 0.5s ease;
 }
-
-table,
-th {
+.menu[toggled="true"] {
+    top: 50%;
+}
+menu[toggled="false"]{
+    top:100%;
+}
+.option table,
+.option th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-table {
+.option table {
     width: 100%;
     margin-bottom: 15px;
 }
 
-td {
+.option td {
     padding: 8px;
     border: 1px solid #ddd;
     background: #dddddd;
 }
 
 .rooms-options {
-    margin: 15px 0px 0px 0px !important;
+    margin: 15px 0px 0px 0px ;
 }
 
-.close-icon {
+.container-closeIcon {
     display: flex;
     justify-content: flex-end;
 }
 
-.fa-times {
-    font-size: 25px !important;
+.close-icon {
+    font-size: 25px ;
     transition: 0.85s;
 }
 
-.fa-times:hover {
+.close-icon:hover {
     color: red;
-    font-size: 30px !important;
+    font-size: 30px ;
 }
 
 @media screen and (max-width: 768px) {
