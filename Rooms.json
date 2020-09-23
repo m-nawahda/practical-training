@@ -1,0 +1,12 @@
+[{"room-id":"1","room-name":"Living room","room-structure":"structure1","room-colors":[ "indigo", "green", "blue" ]},
+{"room-id":"2","room-name":"Bedroom","room-structure":"structure2","room-colors":[ "red", "indigo", "blue" ]},
+{"room-id":"3","room-name":"Path room","room-structure":"structure3","room-colors":[ "lime", "grey", "indigo" ]},
+{"room-id":"4","room-name":"Bedroom","room-structure":"structure4","room-colors":[ "grey", "lime", "blue" ]},
+{"room-id":"5","room-name":"Bedroom","room-structure":"structure5","room-colors":[ "indigo", "green", "lightcyan" ]},
+{"room-id":"6","room-name":"Living room","room-structure":"structure6","room-colors":[ "red", "lime", "blue" ]},
+{"room-id":"7","room-name":"Path room","room-structure":"structure7","room-colors":[ "lime", "green", "grey" ]},
+{"room-id":"8","room-name":"Living room","room-structure":"structure8","room-colors":[ "red", "green", "lightcyan" ]},
+{"room-id":"9","room-name":"Path room","room-structure":"structure9","room-colors":[ "red", "lightcyan", "indigo" ]},
+{"room-id":"10","room-name":"Path room","room-structure":"structure10","room-colors":[ "lime", "indigo", "red" ]},
+{"room-id":"11","room-name":"Bedroom","room-structure":"structure11","room-colors":[ "lightcyan", "lightcyan", "blue" ]},
+{"room-id":"12","room-name":"Living room","room-structure":"structure12","room-colors":[ "red", "lime", "lightcyan" ]}]
