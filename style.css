@@ -107,7 +107,7 @@ label {
     right: 0;
     background-color: #fff;
     box-shadow: 0 -5px 1px 0 rgba(0, 0, 0, 0.45);
-    overflow: hidden;
+    overflow: auto;
     transition: 0.5s ease;
 }
 .menu[toggled="true"] {
