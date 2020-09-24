@@ -70,12 +70,12 @@ label {
     margin: 4px;
     color: #606366;
     cursor: pointer;
-    transition: 0.85s;
+    transition: transform 0.2s,color 0.2s;
 }
 
 .showmenu-btn:hover {
+    transform: scale(1.2);
     color: red;
-    font-size: 28px;
 }
 
 .container-images {
@@ -141,12 +141,12 @@ label {
 
 .close-icon {
     font-size: 25px ;
-    transition: 0.85s;
+    transition: transform 0.2s,color 0.2s;
 }
 
 .close-icon:hover {
+    transform: scale(1.15);
     color: red;
-    font-size: 30px ;
 }
 
 @media screen and (max-width: 768px) {

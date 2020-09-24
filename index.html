@@ -8,64 +8,10 @@
   <link rel="stylesheet" href="style.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $.ajax({
-      url: "https://api.jsonbin.io/b/5f6c6b89302a837e956cbc66",
-      method: "GET",
-      data: {},
-      success: function (data) {
-        var container_image=document.getElementById("container-images");
-        var container_options=document.getElementById("rooms-options");
-        for (x in data) {
-        var image=document.createElement("img");
-        image.setAttribute("src","room-images/"+data[x].name +".jpg");
-        image.setAttribute("alt",data[x].name);
-        var container_img=document.createElement("div");
-        container_img.className="col-sm-6 col-md-4 col-lg-3";
-        container_img.appendChild(image);
-        container_image.appendChild(container_img);
-        var option=document.createElement("div");
-          option.className="option col-sm-12 col-md-6 col-lg-4";  
-          var table=document.createElement("table");
-          var row1=document.createElement("tr");
-          var headers=[document.createElement("th"),document.createElement("th"),document.createElement("th")];
-          var header_titles=["Room ID","Room Name","Type"];
-          for(i in header_titles){
-            var cellText = document.createTextNode(header_titles[i]);
-            headers[i].appendChild(cellText);
-            row1.appendChild(headers[i]);
-          }
-          table.appendChild(row1);
-          var row2=document.createElement("tr");
-          var informaions_room=[document.createElement("td"),document.createElement("td"),document.createElement("td")];
-          var cellText = document.createTextNode(data[x].id);
-          informaions_room[0].appendChild(cellText);
-          var cellText = document.createTextNode(data[x].name);
-          informaions_room[1].appendChild(cellText);
-          var drop_down=document.createElement("select");
-          var room_types=["Living Room","BedRoom","Path Room"];
-          for(var i=0;i<room_types.length;i++){
-            var type=document.createElement("option");
-            var cellText = document.createTextNode(room_types[i]);
-            type.appendChild(cellText);
-            drop_down.appendChild(type);
-          }
-          informaions_room[2].appendChild(drop_down);
-          row2.appendChild(informaions_room[0]);
-          row2.appendChild(informaions_room[1]);
-          row2.appendChild(informaions_room[2]);
-          table.appendChild(row2);
-          option.appendChild(table);
-          container_options.appendChild(option);
-        }
-      },
-      error: function (data) {},
-      complete: function () {},
-    });
-  </script>
+  
 </head>
 
-<body>
+<body">
   <div class="banner">
     <div class="logo">
       <div class="icon">
@@ -89,6 +35,6 @@
   </div>
 </body>
 
-<script src="SetMenu.js"></script>
+<script src="empersa.js"></script>
 
 </html>
