@@ -14,11 +14,24 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="getRooms.js"></script>
+    <script>
+    $.ajax({
+      url: 'https://api.jsonbin.io/b/5f6c5deb7243cd7e8242a650',
+      method: 'GET',
+      data: {
+      },
+      success: function (data) {
+              console.log(data);
+      },
+      error: function(data) {
+      },
+      complete: function () {
+      }
+    });</script>
 
   </head>
 
-  <body >
+  <body>
     <div class="banner">
       <div class="logo">
         <div class="icon">
