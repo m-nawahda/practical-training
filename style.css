@@ -113,12 +113,6 @@ label {
 .menu[toggled="true"] {
     top: 50%;
 }
-<<<<<<< HEAD
-menu[toggled="false"]{
-    top:100%;
-}
-=======
->>>>>>> bbb34d0e3abea9c949dcf7a9286744f9d92011bd
 .option table,
 .option th {
     border: 1px solid #ddd;
