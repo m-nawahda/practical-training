@@ -1,12 +1,170 @@
-[{"room-id":"1","room-name":"Living room","room-structure":"structure1","room-colors":[ "indigo", "green", "blue" ]},
-{"room-id":"2","room-name":"Bedroom","room-structure":"structure2","room-colors":[ "red", "indigo", "blue" ]},
-{"room-id":"3","room-name":"Path room","room-structure":"structure3","room-colors":[ "lime", "grey", "indigo" ]},
-{"room-id":"4","room-name":"Bedroom","room-structure":"structure4","room-colors":[ "grey", "lime", "blue" ]},
-{"room-id":"5","room-name":"Bedroom","room-structure":"structure5","room-colors":[ "indigo", "green", "lightcyan" ]},
-{"room-id":"6","room-name":"Living room","room-structure":"structure6","room-colors":[ "red", "lime", "blue" ]},
-{"room-id":"7","room-name":"Path room","room-structure":"structure7","room-colors":[ "lime", "green", "grey" ]},
-{"room-id":"8","room-name":"Living room","room-structure":"structure8","room-colors":[ "red", "green", "lightcyan" ]},
-{"room-id":"9","room-name":"Path room","room-structure":"structure9","room-colors":[ "red", "lightcyan", "indigo" ]},
-{"room-id":"10","room-name":"Path room","room-structure":"structure10","room-colors":[ "lime", "indigo", "red" ]},
-{"room-id":"11","room-name":"Bedroom","room-structure":"structure11","room-colors":[ "lightcyan", "lightcyan", "blue" ]},
-{"room-id":"12","room-name":"Living room","room-structure":"structure12","room-colors":[ "red", "lime", "lightcyan" ]}]
+[
+        {
+          "id": "1",
+          "name": "Living room",
+          "structure": "structure1",
+          "style": {
+            "id": "1",
+            "name": "style1",
+            "colors": [
+              "indigo",
+              "green",
+              "blue"
+            ]
+          }
+        },
+        {
+          "id": "2",
+          "name": "Path room",
+          "structure": "structure2",
+          "style": {
+            "id": "2",
+            "name": "style2",
+            "colors": [
+              "red",
+              "indigo",
+              "blue"
+            ]
+          }
+        },
+        {
+          "id": "3",
+          "name": "Bedroom",
+          "structure": "structure3",
+          "style": {
+            "id": "3",
+            "name": "style1",
+            "colors": [
+              "grey",
+              "lime",
+              "blue"
+            ]
+          }
+        },
+        {
+          "id": "4",
+          "name": "Bedroom",
+          "structure": "structure4",
+          "style": {
+            "id": "4",
+            "name": "style4",
+            "colors": [
+              "grey",
+              "lime",
+              "blue"
+            ]
+          }
+        },
+        {
+          "id": "5",
+          "name": "Living room",
+          "structure": "structure5",
+          "style": {
+            "id": "5",
+            "name": "style5",
+            "colors": [
+              "indigo",
+              "green",
+              "lightcyan"
+            ]
+          }
+        },
+        {
+          "id": "6",
+          "name": "Living room",
+          "structure": "structure6",
+          "style": {
+            "id": "6",
+            "name": "style6",
+            "colors": [
+              "red",
+              "lime",
+              "blue"
+            ]
+          }
+        },
+        {
+          "id": "7",
+          "name": "Path room",
+          "structure": "structure7",
+          "style": {
+            "id": "7",
+            "name": "style7",
+            "colors": [
+              "lime",
+              "green",
+              "grey"
+            ]
+          }
+        },
+        {
+          "id": "8",
+          "name": "Living room",
+          "structure": "structure8",
+          "style": {
+            "id": "8",
+            "name": "style8",
+            "colors": [
+              "red",
+              "green",
+              "lightcyan"
+            ]
+          }
+        },
+        {
+          "id": "9",
+          "name": "Path room",
+          "structure": "structure9",
+          "style": {
+            "id": "9",
+            "name": "style9",
+            "colors": [
+              "red",
+              "lightcyan",
+              "indigo"
+            ]
+          }
+        },
+        {
+          "id": "10",
+          "name": "Path room",
+          "structure": "structure10",
+          "style": {
+            "id": "10",
+            "name": "style10",
+            "colors": [
+              "lime",
+              "indigo",
+              "red"
+            ]
+          }
+        },
+        {
+          "id": "11",
+          "name": "Living room",
+          "structure": "structure11",
+          "style": {
+            "id": "11",
+            "name": "style11",
+            "colors": [
+              "lightcyan",
+              "lightcyan",
+              "blue"
+            ]
+          }
+        },
+        {
+          "id": "12",
+          "name": "Bedroom",
+          "structure": "structure12",
+          "style": {
+            "id": "12",
+            "name": "style12",
+            "colors": [
+              "red",
+              "lime",
+              "lightcyan"
+            ]
+          }
+        }
+      ]
