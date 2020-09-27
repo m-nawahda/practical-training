@@ -1,170 +1,170 @@
 [
-        {
-          "id": "1",
-          "name": "room1",
-          "structure": "structure1",
-          "style": {
-            "id": "1",
-            "name": "Living room",
-            "colors": [
-              "indigo",
-              "green",
-              "blue"
-            ]
-          }
-        },
-        {
-          "id": "2",
-          "name": "room2",
-          "structure": "structure2",
-          "style": {
-            "id": "2",
-            "name": "Path room",
-            "colors": [
-              "red",
-              "indigo",
-              "blue"
-            ]
-          }
-        },
-        {
-          "id": "3",
-          "name": "room3",
-          "structure": "structure3",
-          "style": {
-            "id": "3",
-            "name": "Bedroom",
-            "colors": [
-              "grey",
-              "lime",
-              "blue"
-            ]
-          }
-        },
-        {
-          "id": "4",
-          "name": "room4",
-          "structure": "structure4",
-          "style": {
-            "id": "4",
-            "name": "Bedroom",
-            "colors": [
-              "grey",
-              "lime",
-              "blue"
-            ]
-          }
-        },
-        {
-          "id": "5",
-          "name": "room5",
-          "structure": "structure5",
-          "style": {
-            "id": "5",
-            "name": "Living room",
-            "colors": [
-              "indigo",
-              "green",
-              "lightcyan"
-            ]
-          }
-        },
-        {
-          "id": "6",
-          "name": "room6",
-          "structure": "structure6",
-          "style": {
-            "id": "6",
-            "name": "Living room",
-            "colors": [
-              "red",
-              "lime",
-              "blue"
-            ]
-          }
-        },
-        {
-          "id": "7",
-          "name": "room7",
-          "structure": "structure7",
-          "style": {
-            "id": "7",
-            "name": "Path room",
-            "colors": [
-              "lime",
-              "green",
-              "grey"
-            ]
-          }
-        },
-        {
-          "id": "8",
-          "name": "room8",
-          "structure": "structure8",
-          "style": {
-            "id": "8",
-            "name": "Living room",
-            "colors": [
-              "red",
-              "green",
-              "lightcyan"
-            ]
-          }
-        },
-        {
-          "id": "9",
-          "name": "room9",
-          "structure": "structure9",
-          "style": {
-            "id": "9",
-            "name": "Path room",
-            "colors": [
-              "red",
-              "lightcyan",
-              "indigo"
-            ]
-          }
-        },
-        {
-          "id": "10",
-          "name": "room12",
-          "structure": "structure10",
-          "style": {
-            "id": "10",
-            "name": "Path room",
-            "colors": [
-              "lime",
-              "indigo",
-              "red"
-            ]
-          }
-        },
-        {
-          "id": "11",
-          "name": "room11",
-          "structure": "structure11",
-          "style": {
-            "id": "11",
-            "name": "Living room",
-            "colors": [
-              "lightcyan",
-              "lightcyan",
-              "blue"
-            ]
-          }
-        },
-        {
-          "id": "12",
-          "name": "room12",
-          "structure": "structure12",
-          "style": {
-            "id": "12",
-            "name": "Bedroom",
-            "colors": [
-              "red",
-              "lime",
-              "lightcyan"
-            ]
-          }
-        }
+  {
+    "id": "1",
+    "name": "room1",
+    "structure": "structure1",
+    "style": {
+      "id": "1",
+      "name": "Living room",
+      "colors": [
+        "indigo",
+        "green",
+        "blue"
       ]
+    }
+  },
+  {
+    "id": "2",
+    "name": "room2",
+    "structure": "structure2",
+    "style": {
+      "id": "2",
+      "name": "Path room",
+      "colors": [
+        "red",
+        "indigo",
+        "blue"
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "name": "room3",
+    "structure": "structure3",
+    "style": {
+      "id": "3",
+      "name": "Bedroom",
+      "colors": [
+        "grey",
+        "lime",
+        "blue"
+      ]
+    }
+  },
+  {
+    "id": "4",
+    "name": "room4",
+    "structure": "structure4",
+    "style": {
+      "id": "4",
+      "name": "Bedroom",
+      "colors": [
+        "grey",
+        "lime",
+        "blue"
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "name": "room5",
+    "structure": "structure5",
+    "style": {
+      "id": "5",
+      "name": "Living room",
+      "colors": [
+        "indigo",
+        "green",
+        "lightcyan"
+      ]
+    }
+  },
+  {
+    "id": "6",
+    "name": "room6",
+    "structure": "structure6",
+    "style": {
+      "id": "6",
+      "name": "Living room",
+      "colors": [
+        "red",
+        "lime",
+        "blue"
+      ]
+    }
+  },
+  {
+    "id": "7",
+    "name": "room7",
+    "structure": "structure7",
+    "style": {
+      "id": "7",
+      "name": "Path room",
+      "colors": [
+        "lime",
+        "green",
+        "grey"
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "name": "room8",
+    "structure": "structure8",
+    "style": {
+      "id": "8",
+      "name": "Living room",
+      "colors": [
+        "red",
+        "green",
+        "lightcyan"
+      ]
+    }
+  },
+  {
+    "id": "9",
+    "name": "room9",
+    "structure": "structure9",
+    "style": {
+      "id": "9",
+      "name": "Path room",
+      "colors": [
+        "red",
+        "lightcyan",
+        "indigo"
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "name": "room12",
+    "structure": "structure10",
+    "style": {
+      "id": "10",
+      "name": "Path room",
+      "colors": [
+        "lime",
+        "indigo",
+        "red"
+      ]
+    }
+  },
+  {
+    "id": "11",
+    "name": "room11",
+    "structure": "structure11",
+    "style": {
+      "id": "11",
+      "name": "Living room",
+      "colors": [
+        "lightcyan",
+        "lightcyan",
+        "blue"
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "name": "room12",
+    "structure": "structure12",
+    "style": {
+      "id": "12",
+      "name": "Bedroom",
+      "colors": [
+        "red",
+        "lime",
+        "lightcyan"
+      ]
+    }
+  }
+]

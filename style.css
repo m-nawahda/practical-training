@@ -13,7 +13,7 @@ label {
     top: 0;
     z-index: 1;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
-    }
+}
 
 .logo {
     width: 100%;
@@ -110,11 +110,12 @@ label {
     overflow: auto;
     transition: 0.5s ease;
 }
+
 .menu[toggled="true"] {
     top: 50%;
 }
-.option table,
-.option th {
+
+.option table, .option th {
     border: 1px solid #ddd;
     padding: 8px;
 }
