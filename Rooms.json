@@ -1,11 +1,11 @@
 [
         {
           "id": "1",
-          "name": "Living room",
+          "name": "room1",
           "structure": "structure1",
           "style": {
             "id": "1",
-            "name": "style1",
+            "name": "Living room",
             "colors": [
               "indigo",
               "green",
@@ -15,11 +15,11 @@
         },
         {
           "id": "2",
-          "name": "Path room",
+          "name": "room2",
           "structure": "structure2",
           "style": {
             "id": "2",
-            "name": "style2",
+            "name": "Path room",
             "colors": [
               "red",
               "indigo",
@@ -29,11 +29,11 @@
         },
         {
           "id": "3",
-          "name": "Bedroom",
+          "name": "room3",
           "structure": "structure3",
           "style": {
             "id": "3",
-            "name": "style1",
+            "name": "Bedroom",
             "colors": [
               "grey",
               "lime",
@@ -43,11 +43,11 @@
         },
         {
           "id": "4",
-          "name": "Bedroom",
+          "name": "room4",
           "structure": "structure4",
           "style": {
             "id": "4",
-            "name": "style4",
+            "name": "Bedroom",
             "colors": [
               "grey",
               "lime",
@@ -57,11 +57,11 @@
         },
         {
           "id": "5",
-          "name": "Living room",
+          "name": "room5",
           "structure": "structure5",
           "style": {
             "id": "5",
-            "name": "style5",
+            "name": "Living room",
             "colors": [
               "indigo",
               "green",
@@ -71,11 +71,11 @@
         },
         {
           "id": "6",
-          "name": "Living room",
+          "name": "room6",
           "structure": "structure6",
           "style": {
             "id": "6",
-            "name": "style6",
+            "name": "Living room",
             "colors": [
               "red",
               "lime",
@@ -85,11 +85,11 @@
         },
         {
           "id": "7",
-          "name": "Path room",
+          "name": "room7",
           "structure": "structure7",
           "style": {
             "id": "7",
-            "name": "style7",
+            "name": "Path room",
             "colors": [
               "lime",
               "green",
@@ -99,11 +99,11 @@
         },
         {
           "id": "8",
-          "name": "Living room",
+          "name": "room8",
           "structure": "structure8",
           "style": {
             "id": "8",
-            "name": "style8",
+            "name": "Living room",
             "colors": [
               "red",
               "green",
@@ -113,11 +113,11 @@
         },
         {
           "id": "9",
-          "name": "Path room",
+          "name": "room9",
           "structure": "structure9",
           "style": {
             "id": "9",
-            "name": "style9",
+            "name": "Path room",
             "colors": [
               "red",
               "lightcyan",
@@ -127,11 +127,11 @@
         },
         {
           "id": "10",
-          "name": "Path room",
+          "name": "room12",
           "structure": "structure10",
           "style": {
             "id": "10",
-            "name": "style10",
+            "name": "Path room",
             "colors": [
               "lime",
               "indigo",
@@ -141,11 +141,11 @@
         },
         {
           "id": "11",
-          "name": "Living room",
+          "name": "room11",
           "structure": "structure11",
           "style": {
             "id": "11",
-            "name": "style11",
+            "name": "Living room",
             "colors": [
               "lightcyan",
               "lightcyan",
@@ -155,11 +155,11 @@
         },
         {
           "id": "12",
-          "name": "Bedroom",
+          "name": "room12",
           "structure": "structure12",
           "style": {
             "id": "12",
-            "name": "style12",
+            "name": "Bedroom",
             "colors": [
               "red",
               "lime",

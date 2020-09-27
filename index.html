@@ -1,203 +1,40 @@
 <html>
-  <head>
-    <title>EMPRESA-3</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="getRooms.js"></script>
+<head>
+  <title>EMPRESA-3</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
 
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+</head>
 
-  <body >
-    <div class="banner">
-      <div class="logo">
-        <div class="icon">
-          <label class="E-label">E</label>
-        </div>
-        <label class="emp-label">EMPRESA</label>
+<body">
+  <div class="banner">
+    <div class="logo">
+      <div class="icon">
+        <label class="E-label">E</label>
       </div>
-      <div class="bottom-banner">
-        <label class="estudio"> estudio </label>
-        <i class="fa fa-cog showmenu-btn" onclick="setMenuVisibility(0)"></i>
-      </div>
+      <label class="emp-label">EMPRESA</label>
     </div>
-    <div class="row container-images" onclick="setMenuVisibility(1)">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room1.jpg" alt="one" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room2.jpg" alt="two" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room3.jpg" alt="three" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room4.jpg" alt="four" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room5.jpg" alt="five" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room6.jpg" alt="six" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room7.jpg" alt="seven" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room8.jpg" alt="eight" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room9.jpg" alt="nine" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room10.jpg" alt="ten" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room11.jpg" alt="eleven" />
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <img src="room-images/room12.jpg" alt="twelve" />
-      </div>
+    <div class="bottom-banner">
+      <label class="estudio"> estudio </label>
+      <i class="fa fa-cog showmenu-btn" onclick="setMenuVisibility(0)"></i>
     </div>
-    <div class="menu" toggled="false">
-      <div class="container-closeIcon">
-        <i class="fa fa-times close-icon" onclick="setMenuVisibility(1)"></i>
-      </div>
-      <div class="row rooms-options">
-        <div class="option col-sm-12 col-md-6 col-lg-4">
-          <table>
-            <tr>
-              <th>Room#</th>
-              <th>Room ID</th>
-              <th>Type</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>100</td>
-              <td>
-                <select>
-                  <option>Living room</option>
-                  <option>Bedroom</option>
-                  <option>Bath room</option>
-                </select>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="option col-sm-12 col-md-6 col-lg-4">
-          <table>
-            <tr>
-              <th>Room#</th>
-              <th>Room ID</th>
-              <th>Type</th>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>102</td>
-              <td>
-                <select>
-                  <option>Living room</option>
-                  <option>Bedroom</option>
-                  <option>Bath room</option>
-                </select>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="option col-sm-12 col-md-6 col-lg-4">
-          <table>
-            <tr>
-              <th>Room#</th>
-              <th>Room ID</th>
-              <th>Type</th>
-            </tr>
-            <tr>
-              <td>12</td>
-              <td>112</td>
-              <td>
-                <select>
-                  <option>Living room</option>
-                  <option>Bedroom</option>
-                  <option>Bath room</option>
-                </select>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="option col-sm-12 col-md-6 col-lg-4">
-          <table>
-            <tr>
-              <th>Room#</th>
-              <th>Room ID</th>
-              <th>Type</th>
-            </tr>
-            <tr>
-              <td>18</td>
-              <td>120</td>
-              <td>
-                <select>
-                  <option>Living room</option>
-                  <option>Bedroom</option>
-                  <option>Bath room</option>
-                </select>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="option col-sm-12 col-md-6 col-lg-4">
-          <table>
-            <tr>
-              <th>Room#</th>
-              <th>Room ID</th>
-              <th>Type</th>
-            </tr>
-            <tr>
-              <td>19</td>
-              <td>121</td>
-              <td>
-                <select>
-                  <option>Living room</option>
-                  <option>Bedroom</option>
-                  <option>Bath room</option>
-                </select>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="option col-sm-12 col-md-6 col-lg-4">
-          <table>
-            <tr>
-              <th>Room#</th>
-              <th>Room ID</th>
-              <th>Type</th>
-            </tr>
-            <tr>
-              <td>25</td>
-              <td>128</td>
-              <td>
-                <select>
-                  <option>Living room</option>
-                  <option>Bedroom</option>
-                  <option>Bath room</option>
-                </select>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
+  </div>
+  <div class="row container-images" id="container-images" onclick="setMenuVisibility(1)">
+  </div>
+  <div class="menu" toggled="false">
+    <div class="container-closeIcon">
+      <i class="fa fa-times close-icon" onclick="setMenuVisibility(1)"></i>
     </div>
-  </body>
+    <div class="row rooms-options" id="rooms-options"> 
+    </div>
+  </div>
+</body>
 
-  <script src="SetMenu.js"></script>
+<script src="empersa.js"></script>
 
 </html>
