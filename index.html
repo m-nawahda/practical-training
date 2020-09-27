@@ -1,34 +1,47 @@
 <html>
-    <head>
-        <title>EMPRESA</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="style.css" />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
+<head>
+  <title>EMPRESA</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
 
-    <body">
-        <div class="banner">
-            <div class="logo">
-              <div class="icon">
-                  <label class="e-label">E</label>
-              </div>
-              <label class="emp-label">EMPRESA</label>
-            </div>
-            <div class="bottom-banner">
-                <label class="estudio">estudio</label>
-                <i class="fa fa-cog showmenu-btn" onclick="setMenuVisibility(0)"></i>
-            </div>
-        </div>
-        <div class="row container-images" id="container-images" onclick="setMenuVisibility(1)"></div>
-        <div class="menu" toggled="false">
-            <div class="container-closeIcon">
-                <i class="fa fa-times close-icon" onclick="setMenuVisibility(1)"></i>
-            </div>
-            <div class="row rooms-options" id="rooms-options"></div>
-        </div>
-    </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-    <script src="empersa.js"></script>
+<body">
+  <div class="banner">
+    <div class="logo">
+      <div class="icon">
+        <label class="e-label">E</label>
+      </div>
+      <label class="emp-label">EMPRESA</label>
+    </div>
+    <div class="bottom-banner">
+      <label class="estudio">estudio</label>
+      <div class="filters">
+        <select>
+          <option>White</option>
+          <option>Black</option>
+          <option>Red</option>
+        </select>
+        </td>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Structure">
+        <i class="fa fa-cog showmenu-btn" onclick="setMenuVisibility(0)"></i>
+      </div>
+    </div>
+  </div>
+  <div class="row container-images" id="container-images" onclick="setMenuVisibility(1)"></div>
+  <div class="menu" toggled="false">
+    <div class="container-closeIcon">
+      <i class="fa fa-times close-icon" onclick="setMenuVisibility(1)"></i>
+    </div>
+    <div class="row rooms-options" id="rooms-options"></div>
+  </div>
+  </body>
+
+  <script src="empersa.js"></script>
+
 </html>

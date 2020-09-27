@@ -54,6 +54,7 @@ label {
 .bottom-banner {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: rgb(117, 113, 113);
     background-color: rgb(223, 223, 223);
 }
