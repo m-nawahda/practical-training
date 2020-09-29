@@ -54,7 +54,6 @@ label {
 .bottom-banner {
     display: flex;
     align-items: center;
-    justify-content: center;
     color: rgb(117, 113, 113);
     background-color: rgb(223, 223, 223);
 }
@@ -111,11 +110,6 @@ label {
     overflow: auto;
     transition: 0.5s ease;
 }
-
-.menu[toggled="true"] {
-    top: 50%;
-}
-
 .option table, .option th {
     border: 1px solid #ddd;
     padding: 8px;

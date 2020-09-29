@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,35 +12,43 @@
 </head>
 
 <body">
-  <div class="banner">
-    <div class="logo">
-      <div class="icon">
-        <label class="e-label">E</label>
+    <div class="banner">
+        <div class="logo">
+            <div class="icon">
+                 <label class="E-label">E</label>
+            </div>
+            <label class="emp-label">EMPRESA</label>
+        </div>
+     <div class="bottom-banner">
+          <label class="estudio">estudio</label>
+          <button type="button" id="filter-btn">filtter</button>
+          <div class="filters">
+              <select>
+                  <option>All</option>
+                  <option>White</option>
+                  <option>Black</option>
+                  <option>Red</option>
+                  <option>Indigo</option>
+                  <option>Blue</option>
+                  <option>Green</option>
+                  <option>Lime</option>
+                  <option>Red</option>
+                  <option>Lime</option>
+                  <option>Lightcyan</option>
+              </select>
+              <input type="text" id="name" placeholder="Name"/>
+              <input type="text" id="structure" placeholder="Structure"/>
+              <i class="fa fa-cog showmenu-btn" onclick="setMenuVisibility(0)"></i>
+          </div>
       </div>
-      <label class="emp-label">EMPRESA</label>
     </div>
-    <div class="bottom-banner">
-      <label class="estudio">estudio</label>
-      <div class="filters">
-        <select>
-          <option>White</option>
-          <option>Black</option>
-          <option>Red</option>
-        </select>
-        </td>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Structure">
-        <i class="fa fa-cog showmenu-btn" onclick="setMenuVisibility(0)"></i>
-      </div>
+    <div class="row container-images" id="container-images" data-rooms="[]" data-filtersRoom="[]" onclick="setMenuVisibility(1)"></div>
+    <div class="menu" data-toggled="false">
+        <div class="container-closeIcon">
+            <i class="fa fa-times close-icon" onclick="setMenuVisibility(1)"></i>
+        </div>
+        <div class="row rooms-options" id="rooms-options"></div>
     </div>
-  </div>
-  <div class="row container-images" id="container-images" onclick="setMenuVisibility(1)"></div>
-  <div class="menu" toggled="false">
-    <div class="container-closeIcon">
-      <i class="fa fa-times close-icon" onclick="setMenuVisibility(1)"></i>
-    </div>
-    <div class="row rooms-options" id="rooms-options"></div>
-  </div>
   </body>
 
   <script src="empersa.js"></script>

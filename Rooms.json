@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "room1",
-    "structure": "structure1",
+    "structure": "Living room",
     "style": {
       "id": "1",
       "name": "Living room",
@@ -16,7 +16,7 @@
   {
     "id": "2",
     "name": "room2",
-    "structure": "structure2",
+    "structure": "Path room",
     "style": {
       "id": "2",
       "name": "Path room",
@@ -30,7 +30,7 @@
   {
     "id": "3",
     "name": "room3",
-    "structure": "structure3",
+    "structure": "Bedroom",
     "style": {
       "id": "3",
       "name": "Bedroom",
@@ -44,7 +44,7 @@
   {
     "id": "4",
     "name": "room4",
-    "structure": "structure4",
+    "structure": "Bedroom",
     "style": {
       "id": "4",
       "name": "Bedroom",
@@ -58,7 +58,7 @@
   {
     "id": "5",
     "name": "room5",
-    "structure": "structure5",
+    "structure": "Living room",
     "style": {
       "id": "5",
       "name": "Living room",
@@ -72,7 +72,7 @@
   {
     "id": "6",
     "name": "room6",
-    "structure": "structure6",
+    "structure": "Living room",
     "style": {
       "id": "6",
       "name": "Living room",
@@ -86,7 +86,7 @@
   {
     "id": "7",
     "name": "room7",
-    "structure": "structure7",
+    "structure": "Path room",
     "style": {
       "id": "7",
       "name": "Path room",
@@ -100,7 +100,7 @@
   {
     "id": "8",
     "name": "room8",
-    "structure": "structure8",
+    "structure": "Living room",
     "style": {
       "id": "8",
       "name": "Living room",
@@ -114,7 +114,7 @@
   {
     "id": "9",
     "name": "room9",
-    "structure": "structure9",
+    "structure": "Path room",
     "style": {
       "id": "9",
       "name": "Path room",
@@ -128,7 +128,7 @@
   {
     "id": "10",
     "name": "room12",
-    "structure": "structure10",
+    "structure": "Path room",
     "style": {
       "id": "10",
       "name": "Path room",
@@ -142,12 +142,12 @@
   {
     "id": "11",
     "name": "room11",
-    "structure": "structure11",
+    "structure": "Living room",
     "style": {
       "id": "11",
       "name": "Living room",
       "colors": [
-        "lightcyan",
+        "Red",
         "lightcyan",
         "blue"
       ]
@@ -156,7 +156,7 @@
   {
     "id": "12",
     "name": "room12",
-    "structure": "structure12",
+    "structure": "Bedroom",
     "style": {
       "id": "12",
       "name": "Bedroom",
