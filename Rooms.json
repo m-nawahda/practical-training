@@ -2,13 +2,13 @@
   {
     "id": "1",
     "name": "room1",
-    "structure": "Living room",
+    "structure": "Living-room",
     "style": {
       "id": "1",
-      "name": "Living room",
+      "name": "Living-room",
       "colors": [
         "indigo",
-        "green",
+        "black",
         "blue"
       ]
     }
@@ -16,10 +16,10 @@
   {
     "id": "2",
     "name": "room2",
-    "structure": "Path room",
+    "structure": "Path-room",
     "style": {
       "id": "2",
-      "name": "Path room",
+      "name": "Path-room",
       "colors": [
         "red",
         "indigo",
@@ -37,7 +37,7 @@
       "colors": [
         "grey",
         "lime",
-        "blue"
+        "white"
       ]
     }
   },
@@ -58,10 +58,10 @@
   {
     "id": "5",
     "name": "room5",
-    "structure": "Living room",
+    "structure": "Living-room",
     "style": {
       "id": "5",
-      "name": "Living room",
+      "name": "Living-room",
       "colors": [
         "indigo",
         "green",
@@ -72,10 +72,10 @@
   {
     "id": "6",
     "name": "room6",
-    "structure": "Living room",
+    "structure": "Living-room",
     "style": {
       "id": "6",
-      "name": "Living room",
+      "name": "Living-room",
       "colors": [
         "red",
         "lime",
@@ -86,10 +86,10 @@
   {
     "id": "7",
     "name": "room7",
-    "structure": "Path room",
+    "structure": "Path-room",
     "style": {
       "id": "7",
-      "name": "Path room",
+      "name": "Path-room",
       "colors": [
         "lime",
         "green",
@@ -100,10 +100,10 @@
   {
     "id": "8",
     "name": "room8",
-    "structure": "Living room",
+    "structure": "Living-room",
     "style": {
       "id": "8",
-      "name": "Living room",
+      "name": "Living-room",
       "colors": [
         "red",
         "green",
@@ -114,10 +114,10 @@
   {
     "id": "9",
     "name": "room9",
-    "structure": "Path room",
+    "structure": "Path-room",
     "style": {
       "id": "9",
-      "name": "Path room",
+      "name": "Path-room",
       "colors": [
         "red",
         "lightcyan",
@@ -127,29 +127,29 @@
   },
   {
     "id": "10",
-    "name": "room12",
-    "structure": "Path room",
+    "name": "room10",
+    "structure": "Path-room",
     "style": {
       "id": "10",
-      "name": "Path room",
+      "name": "Path-room",
       "colors": [
         "lime",
         "indigo",
-        "red"
+        "white"
       ]
     }
   },
   {
     "id": "11",
     "name": "room11",
-    "structure": "Living room",
+    "structure": "Living-room",
     "style": {
       "id": "11",
-      "name": "Living room",
+      "name": "Living-room",
       "colors": [
         "Red",
         "lightcyan",
-        "blue"
+        "black"
       ]
     }
   },
