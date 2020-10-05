@@ -38,18 +38,18 @@
       <label class="estudio col-4">estudio</label>
       <div class="filters col-4">
         <button type="button" class="filter-btn btn btn-info col-2" id="filter-btn">filter</button>
-        <select class="selection-color form-control col-3">
-          <option>All</option>
-          <option>White</option>
-          <option>Black</option>
-          <option>Red</option>
-          <option>Indigo</option>
-          <option>Blue</option>
-          <option>Green</option>
-          <option>Lime</option>
-          <option>Red</option>
-          <option>Lime</option>
-          <option>Lightcyan</option>
+        <select  class="selection-color form-control col-3">
+          <option value="all">All</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="red">Red</option>
+          <option value="indigo">Indigo</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="lime">Lime</option>
+          <option value="red">Red</option>
+          <option value="lime">Lime</option>
+          <option value="lightcyan">Lightcyan</option>
         </select>
         <input type="text" class="filter-txt form-control col-3" id="name" placeholder="Name" />
         <input type="text" class="filter-txt form-control col-3" id="structure" placeholder="Structure" />
@@ -59,8 +59,12 @@
     </div>
   
   </div>
+  <div class="info-msg" style="height: 100%;display:none;justify-content: center;align-items:center ;">
+    <i class="fa fa-info-circle" style="font-size: 35px;size: 35px;margin: 10px 5px 0 0;color: red;"></i> 
+    <h2 style="display: inline-block;color: grey;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">No Available Room</h2>
+  </div>
   <div id="empresa-page">
-
+   
     <div class="row container-images" id="container-images" data-rooms="[]" data-filtersRoom="[]"
       onclick="setMenuVisibility(1)"></div>
     <div class="menu" data-toggled="false">
@@ -77,51 +81,51 @@
         aria-hidden="true">
         <div class="modal-conainer modal-dialog cascading-modal modal-avatar modal-sm" role="document">
           <div class="modal-content newRoom-modal">
-            <div class="profileImg-container row">
-              <div class="profile col-12">
+            <div class="profileImg-container ">
+              <div class="profile">
                 <div id="profile" data-name=""><label class="addImageLabel">Add Image</label>
                   <div class="dashes"></div>
                 </div>
                 <input type="file" id="mediaFile" />
               </div>
-              <div class="room-info modal-body text-center mb-1">
-                <div class="body-fields">
-                  <div class="row-field row">
-                    <label class="label label-info col-2">New ID : </label>
-                    <input type="text" id="txt_newID" class="info_field form-control col-4"
-                      placeholder="ID" />
-                  </div> 
-                  <div class="row-field row"> 
-                    <label class="label label-info col-2">Structure : </label>
-                    <input type="text" id="txt_newstructure" class="info_field form-control col-4"
-                      placeholder='Structure'>
-                  </div>
+            </div>
+            <div class="room-info modal-body text-center mb-1">
+              <div class="body-fields">
+                <div class="row-field row">
+                  <label class="label label-info col-2">New ID : </label>
+                  <input type="text" id="txt_newID" class="info_field form-control col-4"
+                    placeholder="ID" />
+                </div> 
+                <div class="row-field row"> 
+                  <label class="label label-info col-2">Structure : </label>
+                  <input type="text" id="txt_newstructure" class="info_field form-control col-4"
+                    placeholder='Structure'>
                 </div>
-                <div class="style-body">
-                  <legend>Style Info</legend>
-                  <div class="row-field row"> 
-                    <label class="label label-info col-3">ID : </label>
-                    <input type="text" id="txt_newStyleID" class="info_field form-control col-4"
-                      placeholder="ID" />
-                  </div>
-                  <div class="row-field row">   
-                    <label class="label label-info col-3">Name : </label>
-                    <input type="text" id="txt_newStyleName" class="info_field form-control col-4"
-                      placeholder='Name' />
-                  </div>
-                  <div class="row-field row">  
-                    <label class="label label-info col-3">Colors :<br> </label>
-                    <input type="text" id="txt_newColors" class="info_field form-control col-4"
-                    placeholder='Colors' />
-                  </div>
               </div>
-              <div class="submit-container modal-footer justify-content-center">
-                <a type="submit" class="addRoom-btn btn btn-success waves-effect waves-light">Add Room
-                  <i class="far fa-gem ml-1 text-white"></i>
-                </a>
-                <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Cancel</a>
-                
-              </div>
+              <div class="style-body">
+                <legend>Style Info</legend>
+                <div class="row-field row"> 
+                  <label class="label label-info col-3">ID : </label>
+                  <input type="text" id="txt_newStyleID" class="info_field form-control col-4"
+                    placeholder="ID" />
+                </div>
+                <div class="row-field row">   
+                  <label class="label label-info col-3">Name : </label>
+                  <input type="text" id="txt_newStyleName" class="info_field form-control col-4"
+                    placeholder='Name' />
+                </div>
+                <div class="row-field row">  
+                  <label class="label label-info col-3">Colors :<br> </label>
+                  <input type="text" id="txt_newColors" class="info_field form-control col-4"
+                  placeholder='Colors' />
+                </div>
+            </div>
+            <div class="submit-container modal-footer justify-content-center">
+              <a type="submit" class="addRoom-btn btn btn-success waves-effect waves-light">Add Room
+                <i class="far fa-gem ml-1 text-white"></i>
+              </a>
+              <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Cancel</a>
+              
             </div>
           </div>
         </div>

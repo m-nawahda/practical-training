@@ -23,8 +23,15 @@ function updateData(data){
   req.send(JSON.stringify(data)); 
 
 }
+function setFields(selectedName,selectedStructure,selectedColor){
+  $('#name').prop('value',selectedName);
+  $('#strucure').prop('value',selectedStructure)
+  $('.selection-color').val(selectedColor)
+}
 function getRooms() {
   document.getElementById('container-images').onclick=show_Modal;
+  document.getElementById('container-images').onmousemove=function(){
+  }
   
   $(document).ready(function () {
     $.ajax({
@@ -32,10 +39,18 @@ function getRooms() {
       method: "GET",
       data: {},
       success: function (data) {
-        $('#container-images').data('rooms', data);
-        var HashRooms = decodeURI(location.hash.substring(1));
-        if (HashRooms.length > 2) {
-          data = JSON.parse(decodeURI(HashRooms));
+        const params = new URLSearchParams(window.location.search);
+        
+
+        if(Array.from(params).length!=0){
+          var selectedName=params.get('name');
+          var selectedStructure=params.get('structure');
+          var selectedColor=params.get('color');
+          
+          data=filterRooms(data,selectedName!=null?selectedName:"",
+          selectedStructure!=null?selectedStructure:"",
+          selectedColor!=null?selectedColor:"all");
+          setFields(selectedName,selectedStructure,selectedColor);
         }
         $(".container-images").empty();
         for (x in data) {
@@ -69,6 +84,8 @@ function getRooms() {
               );
               $("#rooms-options").append(newTable);
         }
+        if(data.length==0)$('.info-msg').css({display:'flex'});
+        else $('.info-msg').css({display:'none'}); 
       },
 
       error: function (data) { },
@@ -78,36 +95,59 @@ function getRooms() {
 
   });
 }
+function addParameters(selectedColor,selectedName,selectedStructure){
+  const params = new URLSearchParams(window.location.search);
+  if(selectedColor!="all")params.set('color',selectedColor)
+  else if(params.has('color'))
+         params.delete('color');
+  if(selectedName!="")
+    params.set("name",selectedName)
+  else if(params.has('name'))
+         params.delete('name');
+  if(selectedStructure!="")
+    params.set("structure",selectedStructure)
+  else if(params.has('structure'))
+    params.delete('structure');
+  window.history.replaceState({}, '', `${location.pathname}?${params}`);
+
+}
 $(document).ready(function () {
   $('#filter-btn').on('click', function () {
-    var selectedColor = $('select').children("option:selected").val().toLowerCase();
-    var selectedName = $('#name').val();
-    var selectedStructure = $('#structure').val();
-    if (selectedColor == "All" && selectedStructure == "structure" && selectedName == "name") {
-        location.hash = encodeURI("");
-        getRooms();
-        return;
-    }
-    var data = $('#container-images').data('rooms');
-    var filter_Rooms = [];
-    $(".container-images").empty();
-    window.location.hash = [];
-
-var filters=filterRooms(data,selectedName,selectedStructure,selectedColor);
-showLoader();
-setTimeout(function(){
-showPage();
-   for (x in filters) {
-      var newImage = $(
-        '<div class="col-sm-6 col-md-4 col-lg-3">\
-          <img src="room-images/' + filters[x].name + '.jpg" alt= '+ filters[x].name+' " data-info='+encodeURI(JSON.stringify(filters[x]))+" id="+filters[x].id+">\
-        </div>");
-        $(".container-images").append(newImage);
-        filter_Rooms.push(filters[x]);
-       }
-    window.location.hash = encodeURI(JSON.stringify(filter_Rooms));
-  },300);
- 
+    $.ajax({
+      url: "https://api.jsonbin.io/b/5f74aa76302a837e957143cc",
+      method: "GET",
+      data: {},
+      success: function (data) {
+        var selectedColor = $('select').children("option:selected").val().toLowerCase();
+        var selectedName = $('#name').val();
+        var selectedStructure = $('#structure').val();
+        if (selectedColor == "All" && selectedStructure == "structure" && selectedName == "name") {
+            window.history.replaceState({}, '', `${location.pathname}`);
+            getRooms();
+            return;
+        }
+        $(".container-images").empty();
+        console.log(data)
+        var filters=filterRooms(data,selectedName,selectedStructure,selectedColor);
+        addParameters(selectedColor,selectedName,selectedStructure);
+        showLoader();
+        setTimeout(function(){
+        showPage();
+          for (x in filters) {
+              var newImage = $(
+                '<div class="col-sm-6 col-md-4 col-lg-3">\
+                  <img src="room-images/' + filters[x].name + '.jpg" alt= '+ filters[x].name+' " data-info='+encodeURI(JSON.stringify(filters[x]))+" id="+filters[x].id+">\
+                </div>");
+                $(".container-images").append(newImage);
+              }
+              if(filters.length==0)$('.info-msg').css({display:'flex'});
+              else $('.info-msg').css({display:'none'});       
+          },300);
+  
+      },
+    
+    });
+   
 });
 });
 $(document).ready(function(){
