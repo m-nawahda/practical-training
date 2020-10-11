@@ -15,8 +15,8 @@ $(function() {
           var reader = new FileReader();
           reader.readAsDataURL(file);
           reader.onload = function(e) {
-            $('#profile').css('background-image', 'url(' + reader.result + ')').addClass('hasImage');
             $('#profile').empty();
+            $('#profile').css('background-image', 'url(' + reader.result + ')').addClass('hasImage');
             var file_Name= file.name.substr(0, file.name.lastIndexOf('.'));  
             $('#profile').data('name',file_Name);
           }
