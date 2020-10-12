@@ -1,86 +1,87 @@
+.newRoom-modal {
+    display: flex;
+    flex-direction: column;
+}
+.profile {
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 40px 50px rgba(black, 0.35);
+    padding: 40px;
+}
 
-      
-      @keyframes spin {
-          from {transform:rotate(0deg);}
-          to {transform:rotate(360deg);}
-      }
-      .newRoom-modal{
-        display: flex;
-        flex-direction: column;
-      }
-      .profile {
-        width:100%;
-        height: 40%;
-        margin: 0 auto;
-        background: #fff;
-        box-shadow: 0 40px 50px rgba(black, 0.35);
-        padding: 40px;
-      }
-      
-      #mediaFile {
-        position: absolute;
-        top: -1000px;
-      }
-      .profileImg-container{
-        width: 100%;
-      }
-      #profile {
-        width: 200px;
-        height: 200px;
-        display: table;
-        margin: 0 auto;
-        position: relative;
-        top: 0px;
-        margin-bottom: -80px;
-        border-radius: 100%;
-        cursor: pointer;
-        background: #f4f4f4;
-        background-size: cover;
-        background-position: center center;
-        box-shadow: 0 5px 8px rgba(black, 0.35);
-      }
-      #profile:hover{
-        background-color: black;
-        opacity: 0.4;
-      }
-      #profile:hover .addImageLabel{
-        color: white;
-      }
-        .dashes {
-          position: absolute;
-          top: 0;
-          left: 0;
-          border-radius: 100%;
-          width: 100%;
-          height: 100%;
-          border: 2px dashed #ddd;
-          opacity: 1;
-        }
-        .addImageLabel {
-          display: table-cell;
-          vertical-align: middle;
-          text-align: center;
-          padding: 0 30px;
-          color: grey;
-          opacity: 1;
-        }
-        .dragging {
-          background-image: none!important;
-        }
-          .dashes {
-            animation-duration: 10s;
-            animation-name: spin;
-            animation-iteration-count:infinite;
-            animation-timing-function: linear;
-            opacity: 1!important;
-          }
-        
-        .hasImage .dashes, .addImageLabel {
-            opacity: 1;
-            pointer-events: none;
-            user-select: none;
-          }
-        
+#mediaFile {
+    position: absolute;
+    top: -1000px;
+}
+.profileImg-container {
+    width: 100%;
+}
+#profile {
+    width: 200px;
+    height: 200px;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    margin-bottom: -80px;
+    border-radius: 100%;
+    cursor: pointer;
+    background: #f4f4f4;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 5px 8px rgba(black, 0.35);
+}
+#profile:hover {
+    background-color: black;
+    opacity: 0.4;
+}
+#profile:hover {  
+    .addImageLabel {
+      color: white;
+    }
+}
+.dashes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #ddd;
+    opacity: 1;
+}
+.addImageLabel {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 30px;
+    color: grey;
+    opacity: 1;
+}
+.dragging {
+    background-image: none !important;
+}
+.dashes {
+    animation-duration: 10s;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 1 !important;
+}
 
-     
-      
+.hasImage .dashes,.addImageLabel {
+    opacity: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
