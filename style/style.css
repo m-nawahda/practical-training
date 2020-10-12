@@ -244,9 +244,6 @@ label {
   justify-content: center;
   align-items: center;
 }
-.newRoom-modal {
-  width: 50%;
-}
 #modalNewRoom {
   padding: 0 !important;
 }
@@ -626,7 +623,7 @@ label {
 }
 @media screen and (max-width: 576px) {
   .extendedBanner {
-    height: calc(13rem + 15px);
+    height: calc(14rem + 18px);
     display: block;
   }
 }
@@ -643,6 +640,13 @@ label {
 .newRoom-modal {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  padding-right: 0 ;
+}
+@media screen and (max-width: 768px) {
+  .newRoom-modal {
+    width: 100%;
+  }
 }
 .profile {
   width: 100%;
