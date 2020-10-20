@@ -1,34 +1,153 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>EMPRESA</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="style.css" />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
+<head>
+  <title>EMPRESA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="uploadImg.css">
 
-    <body">
-        <div class="banner">
-            <div class="logo">
-              <div class="icon">
-                  <label class="e-label">E</label>
-              </div>
-              <label class="emp-label">EMPRESA</label>
-            </div>
-            <div class="bottom-banner">
-                <label class="estudio">estudio</label>
-                <i class="fa fa-cog showmenu-btn" onclick="setMenuVisibility(0)"></i>
-            </div>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+</head>
+
+<body onload="myFunction()">
+  <div class="loading-page" id="loading-page">
+    <div class="loading">
+      <span>Loading...</span>
+    </div>
+  </div>
+  <div class="banner" id="banner">
+    <div class="top-banner" id="top-banner">
+      <div class="logo">
+        <div class="icon">
+          <label class="E-label">E</label>
         </div>
-        <div class="row container-images" id="container-images" onclick="setMenuVisibility(1)"></div>
-        <div class="menu" toggled="false">
+        <label class="emp-label">EMPRESA</label>
+      </div>  
+      <i class="newRoom-icon fa fa-plus"></i>
+    </div>
+
+    <div class="bottom-banner row" id="bottom-banner">
+      <div class="count col-sm-3 col-md-4 col-lg-4" > </div>
+      <label class="estudio col-sm-3 col-md-4 col-lg-4 ">estudio</label>
+      <div class="filters col-sm-6 col-md-4 co-lg-4">
+        <button type="button" disabled class="filter-btn btn btn-info col-sm-2 col-md-2 col-lg-2" id="filter-btn">filter</button>
+        <button type="button" class="clear-btn   btn btn-info col-sm-2 col-md-2 col-lg-2" id="clear-btn">clear</button>
+        <select  class="selection-color form-control col-sm-2 col-md-2 col-lg-2">
+          <option value="all">All</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="red">Red</option>
+          <option value="indigo">Indigo</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="lime">Lime</option>
+          <option value="red">Red</option>
+          <option value="lime">Lime</option>
+          <option value="lightcyan">Lightcyan</option>
+        </select>
+        <input type="text" class="filter-txt form-control  col-sm-2 col-md-2 col-lg-2" id="name" placeholder="Name" />
+        <input type="text" class="filter-txt form-control col-sm-2 col-md-2 col-lg-2" id="structure" placeholder="Structure" />
+        <div class="showMenu-container " >
+          <i class="fa fa-cog showmenu-btn" onclick="setMenuVisibility(0)"></i></div>
+      </div>
+    </div>
+    <div class="extendedBanner">
+
+    </div>
+  </div>
+  <div class="info-msg" style="height: 100%;display:none;justify-content: center;align-items:center ;">
+    <i class="fa fa-info-circle" style="font-size: 35px;size: 35px;margin: 10px 5px 0 0;color: red;"></i> 
+    <h2 style="display: inline-block;color: grey;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">No Available Room</h2>
+  </div>
+  <div id="empresa-page">
+   
+    <div class="container-images row" id="container-images" data-rooms="[]" data-filtersRoom="[]"></div>
+    <div class="menu" data-toggled="false">
+      <div class="container-closeIcon">
+        <i class="fa fa-times close-icon" onclick="setMenuVisibility(1)"></i>
+      </div>
+      <div class="row rooms-options" id="rooms-options"></div>
+    </div>
+    <div class="modalContainer">
+      <!--Modal: Login with Avatar Form-->
+    </div>
+    <div class="new-room">
+      <div class="modal fade" id="modalNewRoom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-conainer modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+          <div class="modal-content newRoom-modal">
             <div class="container-closeIcon">
-                <i class="fa fa-times close-icon" onclick="setMenuVisibility(1)"></i>
+              <i class="fa fa-times close-icon CloseModal"></i>
             </div>
-            <div class="row rooms-options" id="rooms-options"></div>
-        </div>
-    </body>
+            <div class="profileImg-container ">
+              <div class="profile">
+                <div id="profile" data-name="">
+                  
+                </div>
+                <input type="file" id="mediaFile" />
+              </div>
+            </div>
+            <div class="room-info modal-body text-center mb-1">
+              <div class="body-fields">
+                <div class="row-field row">
+                  <label class="label label-info col-xs-4 col-sm-4 col-md-3 col-lg-2">Name : </label>
+                  <input type="text" id="txt_Name" class="info_field form-control col-xs-4 col-sm-6 col-md-4 col-lg-4"
+                    placeholder="Name" />
+                </div> 
+                <div class="row-field row"> 
+                  <label class="label label-info col-xs-4 col-sm-4 col-md-3 col-lg-2">Structure: </label>
+                  <input type="text" id="txt_structure" class="info_field form-control col-xs-4 col-sm-6 col-md-4 col-lg-4"
+                    placeholder='Structure'>
+                </div>
+              </div>
+              <div class="style-body">
+                <legend>Style Info</legend>
+                <div class="row-field row"> 
+                  <label class="label label-info col-xs-6 col-sm-6 col-md-6 col-lg-4">ID : </label>
+                  <input type="text"  id="txt_StyleID" class="info_field form-control col-xs-6 col-sm-8   col-md-4 col-lg-4"
+                    placeholder="ID" />
+                </div>
+                <div class="row-field row">   
+                  <label class="label label-info col-xs-6 col-sm-6 col-md-6 col-lg-4">Name : </label>
+                  <input type="text" id="txt_StyleName" class="info_field form-control col-xs-6 col-sm-8 col-md-4 col-lg-4"
+                    placeholder='Name' />
+                </div>
+                <div class="row-field row">  
+                  <label class="label label-info col-xs-6 col-sm-6 col-md-6 col-lg-4">Colors :<br> </label>
+                  <input type="text" id="txt_Colors" class="info_field form-control col-xs-6 col-sm-8 col-md-4 col-lg-4"
+                  placeholder='Colors' />
+                </div>
+            </div>
+            <div class="submit-container modal-footer justify-content-center">
+              <a type="submit" class="addRoom-btn btn btn-success waves-effect waves-light">Add Room
+                <i class="far fa-gem ml-1 text-white"></i>
+              </a>
+              <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Cancel</a>
+              
+            </div>
+            <div class="loading-add" id="loading-add">
+              <div class="adding">
+              </div>
+              <div>Save...</div>
+            </div>
+              <div id="snackbar1">Successfully Room added </div>
 
-    <script src="empersa.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+<script src="empersa.js"></script>
+<script src="upload.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </html>
